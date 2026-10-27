@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Presenter · External notes</title>
+  <link rel="stylesheet" href="vendor/reveal.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div class="reveal"><div class="slides">
+    <section id="opening"><p class="eyebrow">EXTERNAL NOTES</p><h1>Your words.<br>Your workflow.</h1><p>A static notes file, in any language.</p></section>
+    <section id="details"><p class="eyebrow">OPTIONAL DATA</p><h2>Notes are optional</h2><p>Missing entries use inline notes.</p><aside class="notes"><p>This is the inline fallback for slide two.</p></aside></section>
+    <section id="ending"><p class="eyebrow">NO BUILD AT PLAYBACK</p><h2>Ready offline</h2><p>Open this HTML file directly, or use a local server.</p></section>
+  </div></div>
+  <script src="vendor/reveal.js"></script>
+  <script>window.HTMLPresenterConfig = {autoStart:false};</script>
+  <script src="../presenter-addon/presenter.js"></script>
+  <script>
+    // Run this initialization on both presenter and audience pages.
+    const slides = new Reveal({width:1280,height:720,center:false,hash:true,transition:'none'});
+    slides.initialize().then(() => HTMLPresenter.init(slides, {locale:'en',notesFile:'notes-data.js'}));
+  </script>
+</body>
+</html>

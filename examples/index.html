@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Presenter · 通用示例</title>
+  <link rel="stylesheet" href="vendor/reveal.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div class="reveal"><div class="slides">
+    <section id="welcome" data-title="让演讲更从容" class="cover">
+      <p class="eyebrow">HTML PRESENTER ADDON</p>
+      <h1>让演讲<br>更从容。</h1>
+      <p>当前页、逐页预览、讲稿与计时，一处掌握。</p>
+      <aside class="notes"><p>欢迎使用 HTML Presenter。</p><p>点击右上角的<strong>演讲者模式</strong>，将新打开的投影窗口拖到另一块屏幕。</p><p>备注支持任意语言。Notes can be written in any language.</p></aside>
+    </section>
+    <section id="steps" data-title="按你的节奏展开">
+      <p class="eyebrow">FRAGMENTS</p><h2>按你的节奏展开</h2>
+      <p class="fragment">先提出一个问题。</p>
+      <p class="fragment">再展示你的思路。</p>
+      <p class="fragment">最后给出结论。</p>
+      <aside class="notes"><p>按右方向键或空格逐步展示内容。</p><ul><li>分步状态会同步到投影窗口。</li><li>投影窗口也可以反向控制翻页。</li></ul></aside>
+    </section>
+    <section>
+      <section id="vertical-one" data-title="也支持垂直页面">
+        <p class="eyebrow">VERTICAL SLIDES</p><h2>也支持垂直页面</h2><p>向下继续，或通过缩略图直接跳转。</p>
+        <aside class="notes"><p>这是垂直组的第一页。</p><blockquote>备注中的提示属于普通内容，由作者自由组织。</blockquote></aside>
+      </section>
+      <section id="vertical-two" data-title="保持内容自由">
+        <p class="eyebrow">YOUR CONTENT</p><h2>保持内容自由</h2><p>任意语言，简单格式，可选外部讲稿。</p>
+        <aside class="notes"><p>这是垂直组的第二页。</p><p><em>强调</em>、列表和<a href="https://revealjs.com/">普通链接</a>均可使用。</p></aside>
+      </section>
+    </section>
+    <section id="finish" data-title="没有备注也能演讲">
+      <p class="eyebrow">READY WHEN YOU ARE</p><h2>没有备注<br>也能演讲。</h2><p>从你的下一份 HTML PPT 开始。</p>
+    </section>
+  </div></div>
+  <div id="example-toolbar">← → 翻页 · B 黑屏 · <a href="external-notes.html">外部备注示例</a></div>
+  <script src="vendor/reveal.js"></script>
+  <script>
+    window.deck = new Reveal({width:1280,height:720,margin:0.06,center:false,hash:true,transition:'none'});
+    window.deck.initialize();
+    window.HTMLPresenterConfig = {locale:'zh-CN', hideElements:['#example-toolbar']};
+  </script>
+  <script src="../presenter-addon/presenter.js"></script>
+</body>
+</html>
